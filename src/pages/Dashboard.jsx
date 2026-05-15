@@ -43,7 +43,7 @@ export default function Dashboard() {
     }
 
     if (guilds.length === 0) {
-      alert("Access Denied: You do not have Administrator permissions in any Zenith servers.");
+      alert("Access Denied: You do not have Administrator permissions in any Kuroyama servers.");
       localStorage.removeItem('zenith_token');
       return navigate('/login');
     }
@@ -109,8 +109,8 @@ export default function Dashboard() {
               <i className="fa-solid fa-bars"></i>
             </button>
             <div className="topbar-title-wrap">
-              <p className="topbar-eyebrow">Zenith Control Surface</p>
-              <h1 style={{ margin: 0 }}>{pageTitleMap[activePage] || 'Zenith Dashboard'}</h1>
+              <p className="topbar-eyebrow">Kuroyama Control Surface</p>
+              <h1 style={{ margin: 0 }}>{pageTitleMap[activePage] || 'Kuroyama Dashboard'}</h1>
             </div>
           </div>
           <div className="topbar-actions">
